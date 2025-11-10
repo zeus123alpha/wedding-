@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love & Light — Our Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#c07d6b;
+      --accent-2:#f5e6e0;
+      --text:#333;
+      --muted:#666;
+      --bg:#fff;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; color:var(--text); background:linear-gradient(180deg,#fff 0%, #fffaf6 100%)}
+    .container{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-family:Playfair Display;font-size:20px}
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 440px;gap:32px;align-items:center;margin:28px 0}
+    .hero .title{font-family:Playfair Display, serif;font-size:44px;margin:0 0 8px}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;display:inline-block}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(30,30,30,0.06);overflow:hidden}
+    .cover{width:100%;height:320px;object-fit:cover;display:block}
+    .details{padding:18px}/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+/* Schedule / RSVP */
+.two-col{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+.event{padding:16px;border-radius:10px;background:linear-gradient(180deg,#fff, #fff);}
+.event h3{margin:0 0 6px;font-family:Playfair Display}
+form label{display:block;font-size:14px;margin-top:10px;color:var(--muted)}
+input, textarea, select{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #eee}
+.small{font-size:13px;color:var(--muted)}
+
+footer{margin:36px 0;padding:24px 0;border-top:1px solid #f0e9e6;color:var(--muted);text-align:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .two-col{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .gallery{grid-template-columns:1fr}
+  .logo{width:48px;height:48px}
+  .hero .title{font-size:32px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">L&L</div>
+        <div>
+          <div style="font-weight:700">Love & Light</div>
+          <div class="small">A celebration of our story</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#our-story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <h1 class="title">We're Getting Married</h1>
+    <p>Join us as we celebrate our love on<br><strong>Saturday, March 14, 2026</strong> — ceremony at 5:00 PM followed by dinner and dancing.</p>
+    <p><a class="btn" href="#rsvp">RSVP Now</a></p>
+
+    <div class="card" style="margin-top:18px;display:flex;gap:14px;align-items:center;padding:12px">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f3f1a1a8c6a0b8f6b8d7f6e2e6b9c1a" alt="couple" style="width:120px;height:120px;object-fit:cover;border-radius:10px">
+      <div>
+        <h3 style="margin:0;font-family:Playfair Display">Anaya & Rohit</h3>
+        <p class="small" style="margin-top:6px">Together with their families, invite you to celebrate their wedding. Venue: The Banyan Grove, Kochi</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a2b1c3b5a0f1d7a9c6b3b2a1f4a8c2d" alt="wedding cover">
+    <div class="details">
+      <h3 style="margin-top:0">Venue & Directions</h3>
+      <p class="small">The Banyan Grove, Marine Drive, Kochi — Outdoor garden venue with covered mandap. Parking available onsite.</p>
+      <p style="margin-top:12px"><strong>Dress code:</strong> Festive Indian / Cocktail</p>
+      <p style="margin-top:14px"><a class="btn" href="#gallery">View Photos</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="our-story">
+  <h2 style="font-family:Playfair Display;margin-bottom:6px">Our Story</h2>
+  <p class="small">They met at college, bonded over chai and old Hindi songs, and after five years decided to tie the knot. Below are a few moments from their journey.</p>
+
+  <div id="gallery" class="gallery" aria-label="Wedding photo gallery">
+    <img src="https://images.unsplash.com/photo-1507210815137-3678d8d2c5b7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6" alt="photo1">
+    <img src="https://images.unsplash.com/photo-1520697222867-9fac9b0a6c28?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=bb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e" alt="photo2">
+    <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=cc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f" alt="photo3">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f3f1a1a8c6a0b8f6b8d7f6e2e6b9c1a" alt="photo4">
+    <img src="https://images.unsplash.com/photo-1505765056952-4d6f6f7b6b5a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9" alt="photo5">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0" alt="photo6">
+  </div>
+</section>
+
+<section id="schedule" class="two-col">
+  <div>
+    <h2 style="font-family:Playfair Display;margin-bottom:6px">Schedule</h2>
+    <div class="event">
+      <h3>Ceremony</h3>
+      <p class="small">Date: Saturday, March 14, 2026<br>Time: 5:00 PM — 6:00 PM<br>Location: Garden Mandap</p>
+    </div>
+
+    <div class="event" style="margin-top:10px">
+      <h3>Reception</h3>
+      <p class="small">Time: 7:00 PM onwards<br>Music, dinner and dancing in the courtyard.</p>
+    </div>
+
+    <div class="event" style="margin-top:10px">
+      <h3>After Party</h3>
+      <p class="small">Time: 10:30 PM — Midnight<br>Location: Banyan Lounge (Restricted to invited guests)</p>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card" style="padding:16px">
+      <h3 style="margin-top:0">Travel & Stay</h3>
+      <p class="small">Nearby hotels: Sea View Suites, Harbor Inn. We have arranged a shuttle from the central station at 4:00 PM.</p>
+      <p class="small" style="margin-top:10px"><strong>Contact:</strong> +91 98765 43210</p>
+    </div>
+  </aside>
+</section>
+
+<section id="rsvp" style="margin-top:18px">
+  <h2 style="font-family:Playfair Display;margin-bottom:6px">RSVP</h2>
+  <div class="card" style="padding:16px">
+    <form onsubmit="handleRSVP(event)">
+      <label>Name <input id="name" required></label>
+      <label>Email <input id="email" type="email" required></label>
+      <label>Will you attend? <select id="attend"><option>Yes, can't wait!</option><option>No, sadly</option><option>Maybe</option></select></label>
+      <label>Number of guests <input id="guests" type="number" min="0" value="0"></label>
+      <label>Meal preference <select id="meal"><option>Vegetarian</option><option>Non-Vegetarian</option><option>Vegan</option></select></label>
+      <label>Message / Note <textarea id="note" rows="3"></textarea></label>
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+        <button class="btn" type="submit">Send RSVP</button>
+        <div id="rsvp-msg" class="small" aria-live="polite"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div>© <span id="year"></span> Anaya & Rohit — All rights reserved</div>
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleRSVP(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const attend = document.getElementById('attend').value;
+      const guests = document.getElementById('guests').value;
+      const msg = document.getElementById('rsvp-msg');
+
+      // Basic client-side confirmation. In a real site you'd POST to a server.
+      msg.textContent = Thanks ${name}! We've recorded: ${attend} — Guests: ${guests};
+      msg.style.color = 'green';
+      // clear form after 2 seconds
+      setTimeout(()=>{
+        document.querySelector('form').reset();
+      },2000);
+    }
+  </script></body>
+</html>
